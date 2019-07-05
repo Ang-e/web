@@ -11,7 +11,7 @@ function secondArr(data){
 		    da.name='jss'
 			da.age=21
 		}
-		return da
+		return data
 	})
 }
 //3、
