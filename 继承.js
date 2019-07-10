@@ -76,5 +76,5 @@ class People extends Department{
         this.name = name || 'hello';
     }
 }
-let jss = new People('jingshangshang');
+let jss = new People('景尚尚');
 console.log(jss);
