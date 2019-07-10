@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+//函数的作用域，里面可以访问外面的，外面不可以访问里面的
+/*var a=123;
+function test(){
+    var b=123;
+    function demo(){
+        var c=234;
+        console.log(a,b,c)
+    }
+    demo()
+    console.log(a,b,c)
+}
+test()
+console.log(a,b,c)*/
+
+//预编译
+/*function a(a){
+	var a=234;
+	var a=function(){};
+}
+a();
+var a=123;*/
+// function fn(a){
+// 	console.log(a,b,d)
+// 	var a=123;
+// 	console.log(a,b,d)
+// 	function a(){
+// 		var b=function(){}
+// 		function d(){}
+// 	}
+// }
+// fn(1)
+
+function Person(name,age){
+    this.name=name;
+    this.age=age;
+}
+function Student(name,age,grade){
+    Person.call(this,name,age);
+    this.grage=grade;
+}
+let student=new Student('jing',21,100);
+console.log(student);
+</script>
+</html>
